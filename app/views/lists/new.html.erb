@@ -1,3 +1,5 @@
+
+
 <h1>新規投稿</h1>
 <% if @list.errors.any? %>
  <%= @list.errors.count %>件のエラーが発生しました
@@ -17,8 +19,6 @@
 
 　<h4>画像</h4>
 　<%= f.file_field :image, accept: "image/*" %>
-
 　<%= f.submit '投稿' %>
 
 <% end  %>
-
